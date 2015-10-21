@@ -1,0 +1,34 @@
+<modules>
+    <module>
+        <name>http_login_axis2</name>
+        <port_range>8080</port_range>
+        <urls>
+            <fprintPageUrl>/axis2/axis2-admin/</fprintPageUrl>
+            <loginUrl>/axis2/axis2-admin/login</loginUrl>
+        </urls>
+
+        <fprintPage>Welcome to the Axis2 administration console</fprintPage>
+        <fprintMethod>GET</fprintMethod>
+
+        <usernameField>userName</usernameField>
+        <passwordField>password</passwordField>
+        <loginData>
+            <param>
+                <name>userName</name>
+                <value>admin</value>
+            </param>
+            <param>
+                <name>password</name>
+                <value>axis2</value>
+            </param>
+            <param>
+                <name>submit</name>
+                <value>+Login+</value>
+            </param>
+        </loginData>
+        <checkLoginMethod>POST</checkLoginMethod>
+        <fprintSuccess>Welcome to Axis2 Web Admin Module</fprintSuccess>
+        <fprintSuccessLocation>text</fprintSuccessLocation>
+        <ssl>False</ssl>
+    </module>
+</modules>

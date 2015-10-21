@@ -1,0 +1,38 @@
+<modules>
+    <module>
+        <name>http_login_tomcat_basic</name>
+        <port_range>8080</port_range>
+
+        <urls>
+            <loginUrl>/manager/html</loginUrl>
+        </urls>
+
+        <checkLoginMethod>BASIC</checkLoginMethod>
+
+        <passwordField>password</passwordField>
+        <usernameField>username</usernameField>
+        <loginData>
+            <param>
+                <name>username</name>
+                <value>tomcat</value>
+            </param>
+            <param>
+                <name>password</name>
+                <value>tomcat</value>
+            </param>
+        </loginData>
+        <loginData>
+            <param>
+                <name>username</name>
+                <value>tomcat</value>
+            </param>
+            <param>
+                <name>password</name>
+                <value>s3cret</value>
+            </param>
+        </loginData>
+        <fprintSuccess>Tomcat Web Application Manager</fprintSuccess>
+        <ssl>False</ssl>
+        <doAuth>True</doAuth>
+    </module>
+</modules>

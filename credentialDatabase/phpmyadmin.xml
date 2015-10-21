@@ -1,0 +1,30 @@
+<modules>
+    <module>
+        <name>http_login_phpmyadmin</name>
+        <port_range>80</port_range>
+        <urls>
+            <fprintPageUrl>/phpmyadmin/index.php</fprintPageUrl>
+            <loginUrl>/phpmyadmin/index.php</loginUrl>
+        </urls>    
+        <fprintPage>phpMyAdmin</fprintPage>
+        <fprintMethod>GET</fprintMethod>
+
+        <checkLoginMethod>POST</checkLoginMethod>
+        <usernameField>pma_username</usernameField>
+        <passwordField>pma_password</passwordField>
+        <loginData>
+            <param>
+                <name>pma_username</name>
+                <value>root</value>
+            </param>
+            <param>
+                <name>pma_password</name>
+                <value>password</value>
+            </param>
+        </loginData>
+        <fprintSuccess>Server charset</fprintSuccess>
+        <fprintSuccessLocation>text</fprintSuccessLocation>
+        <followLoginRedirects>True</followLoginRedirects>
+        <ssl>false</ssl>
+    </module>
+</modules>

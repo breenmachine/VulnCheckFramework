@@ -1,0 +1,30 @@
+<modules>
+    <module>
+        <name>http_login_railo-41_web</name>
+        <port_range>8888</port_range>
+
+        <urls>
+            <fprintPageUrl>/railo-context/admin/web.cfm</fprintPageUrl>
+            <loginUrl>/railo-context/admin/web.cfm</loginUrl>
+        </urls>
+        <fprintPage>Railo Technologies GmbH Switzerland</fprintPage>
+        <fprintMethod>GET</fprintMethod>
+
+        <checkLoginMethod>POST</checkLoginMethod>
+
+        <passwordField>login_passwordweb</passwordField>
+        <loginData>
+            <param>
+                <name>login_passwordweb</name>
+                <value></value>
+            </param>
+            <param>
+                <name>lang</name>
+                <value>en</value>
+            </param>
+        </loginData>
+        <fprintSuccess>Memory Usage</fprintSuccess>
+        <ssl>False</ssl>
+        <doAuth>False</doAuth>
+    </module>
+</modules>

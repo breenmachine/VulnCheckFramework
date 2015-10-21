@@ -1,0 +1,39 @@
+<modules>
+    <module>
+        <name>http_login_wordpress</name>
+        <port_range>80</port_range>
+        <urls>
+            <fprintPageUrl>/wordpress/wp-login.php</fprintPageUrl>
+            <loginUrl>/wordpress/wp-login.php</loginUrl>
+        </urls>
+        <urls>
+            <fprintPageUrl>/wp-login.php</fprintPageUrl>
+            <loginUrl>/wp-login.php</loginUrl>
+        </urls>
+
+        <fprintPage>Log In</fprintPage>
+        <fprintMethod>GET</fprintMethod>
+
+        <checkLoginMethod>POST</checkLoginMethod>
+        <usernameField>log</usernameField>
+        <passwordField>pwd</passwordField>
+        <loginData>
+            <param>
+                <name>log</name>
+                <value>admin</value>
+            </param>
+            <param>
+                <name>pwd</name>
+                <value>admin</value>
+            </param>
+            <param>
+                <name>wp-submit</name>
+                <value>Log+In</value>
+            </param>
+        </loginData>
+        <followLoginRedirects>True</followLoginRedirects>
+        <fprintSuccess>wordpress_logged_in</fprintSuccess>
+        <fprintSuccessLocation>headers</fprintSuccessLocation>
+        <ssl>false</ssl>
+    </module>
+</modules>

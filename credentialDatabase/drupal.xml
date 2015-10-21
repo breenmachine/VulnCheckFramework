@@ -1,0 +1,42 @@
+<modules>
+    <module>
+        <name>http_login_drupal</name>
+        <port_range>80</port_range>
+        <urls>
+            <fprintPageUrl>/node?destination=node</fprintPageUrl>
+            <loginUrl>/node?destination=node</loginUrl>
+        </urls>
+
+        <fprintPage>User login</fprintPage>
+        <fprintMethod>GET</fprintMethod>
+
+        <checkLoginMethod>POST</checkLoginMethod>
+        <usernameField>name</usernameField>
+        <passwordField>pass</passwordField>
+        <loginData>
+            <param>
+                <name>name</name>
+                <value>admin</value>
+            </param>
+            <param>
+                <name>pass</name>
+                <value>admin</value>
+            </param>
+	    <param>
+		<name>form_id</name>
+	     	<value>user_login_block</value>
+            </param>
+            <param>
+                <name>form_build_id</name>
+                <value>form_</value>
+            </param>
+	    <param>
+                <name>op</name>
+                <value>Log+in</value>
+            </param>
+        </loginData>
+        <followLoginRedirects>True</followLoginRedirects>
+        <fprintSuccess>My account</fprintSuccess>
+        <ssl>false</ssl>
+    </module>
+</modules>

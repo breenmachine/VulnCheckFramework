@@ -1,0 +1,48 @@
+<modules>
+    <module>
+        <name>http_login_wsadmin-8</name>
+        <port_range>9040-9050,9060-9070</port_range>
+        <urls>
+            <fprintPageUrl>/ibm/console/logon.jsp</fprintPageUrl>
+            <loginUrl>/ibm/console/j_security_check</loginUrl>
+        </urls>
+
+        <fprintPage>WebSphere Integrated Solutions Console</fprintPage>
+        <fprintMethod>GET</fprintMethod>
+
+        <usernameField>j_username</usernameField>
+        <passwordField>j_password</passwordField>
+        <loginData>
+            <param>
+                <name>j_username</name>
+                <value>root</value>
+            </param>
+            <param>
+                <name>j_password</name>
+                <value></value>
+            </param>
+            <param>
+                <name>action</name>
+                <value>Log+in</value>
+            </param>
+        </loginData>
+        <loginData>
+            <param>
+                <name>j_username</name>
+                <value>root</value>
+            </param>
+            <param>
+                <name>j_password</name>
+                <value>root</value>
+            </param>
+            <param>
+                <name>action</name>
+                <value>Log+in</value>
+            </param>
+        </loginData>
+        <checkLoginMethod>POST</checkLoginMethod>
+        <fprintSuccess>LtpaToken2</fprintSuccess>
+        <fprintSuccessLocation>headers</fprintSuccessLocation>
+        <ssl>True</ssl>
+    </module>
+</modules>

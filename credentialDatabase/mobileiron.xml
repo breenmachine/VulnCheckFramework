@@ -1,0 +1,31 @@
+<modules>
+    <module>
+        <name>http_login_mobileiron_employee</name>
+        <port_range>443</port_range>
+        <urls>
+            <fprintPageUrl>/employee/login.jsp</fprintPageUrl>
+            <loginUrl>/employee/j_spring_security_check</loginUrl>
+        </urls>
+
+        <fprintPage>MobileIron MyPhone@Work: Sign In</fprintPage>
+        <fprintMethod>GET</fprintMethod>
+
+        <usernameField>j_username</usernameField>
+        <passwordField>j_password</passwordField>
+        <loginData>
+            <param>
+                <name>j_username</name>
+                <value>root</value>
+            </param>
+            <param>
+                <name>j_password</name>
+                <value></value>
+            </param>
+        </loginData>
+
+        <checkLoginMethod>POST</checkLoginMethod>
+        <fprintSuccess>LtpaToken2</fprintSuccess>
+        <fprintSuccessLocation>headers</fprintSuccessLocation>
+        <ssl>True</ssl>
+    </module>
+</modules>

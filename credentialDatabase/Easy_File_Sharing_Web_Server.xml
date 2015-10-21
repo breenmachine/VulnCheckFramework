@@ -1,0 +1,37 @@
+<modules>
+    <module>
+        <name>http_login_easy_file_sharing_web_server</name>
+        <port_range>80</port_range>
+        <urls>
+            <fprintPageUrl>/login.htm</fprintPageUrl>
+            <loginUrl>/forum.ghp</loginUrl>
+        </urls>
+
+        <fprintPage>Login - powered by Easy File Sharing Web Server</fprintPage>
+        <fprintMethod>GET</fprintMethod>
+
+        <checkLoginMethod>POST</checkLoginMethod>
+        <usernameField>frmUserName</usernameField>
+        <passwordField>frmUserPass</passwordField>
+        <loginData>
+            <param>
+                <name>login</name>
+                <value>Login!</value>
+            </param>
+            <param>
+                <name>frmLogin</name>
+                <value>true</value>
+            </param>
+            <param>
+                <name>frmUserName</name>
+                <value>Admin</value>
+            </param>
+            <param>
+                <name>frmUserPass</name>
+                <value>sa123</value>
+            </param>
+        </loginData>
+        <fprintSuccess>Virtual Folders</fprintSuccess>
+        <ssl>False</ssl>
+    </module>
+</modules>
